@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="astronaut" src="models/astronaut/scene.gltf">
+        </a-asset-item>
+        <a-asset-item id="moon" src="models/moon/scene.gltf">
+        </a-asset-item>
+        <a-asset-item id="flag" src="models/flag/scene.gltf">
+        </a-asset-item>
+        <a-asset-item id="surface" src="models/surface/scene.gltf">
+        </a-asset-item>
+      </a-assets>
+      <a-entity gltf-model="#astronaut" position="0.2 0 0.5" scale="0.2 0.2 0.2" animation-mixer="clip: wave">
+      </a-entity>
+      <a-entity gltf-model="#flag" position="-0.15 0 0.7" scale="0.0007 0.0007 0.0007" animation-mixer>
+      </a-entity>
+      <a-entity gltf-model="#surface" position="0 0 0" scale="3 3 3">
+      </a-entity>
+
+      <a-entity position="0 -1.25 1.5">
+        <a-camera></a-camera>
+      </a-entity>
+
+      <a-sky color="#000"></a-sky>
+    </a-scene>
+  </body>
+</html>
