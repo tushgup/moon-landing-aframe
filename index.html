@@ -16,20 +16,28 @@
         </a-asset-item>
         <a-asset-item id="lan" src="models/lan/scene.gltf">
         </a-asset-item>
+        <a-asset-item id="curiosity" src="models/curiosity/scene.gltf">
+        </a-asset-item>
         <a-asset-item id="earth" src="models/earth/scene.gltf">
         </a-asset-item>
+        <a-asset-item id="stars" src="models/stars/scene.gltf">
+        </a-asset-item>
       </a-assets>
-      <a-entity gltf-model="#astronaut" position="0.2 0 0.7" scale="0.2 0.2 0.2" animation-mixer="clip:wave">
+      <a-entity gltf-model="#astronaut" position="0.3 0.15 0.8" scale="0.18 0.18 0.18" rotation="5 -17 0" animation-mixer="clip:wave">
       </a-entity>
-      <a-entity gltf-model="#flag" position="-0.1 0 0.9" scale="0.0006 0.0006 0.0006" animation-mixer>
+      <a-entity gltf-model="#flag" position="-0.1 0 0.9" scale="0.0008 0.0008 0.0008" rotation="0 -40 2" animation-mixer>
       </a-entity>
-      <a-entity gltf-model="#lan" position="-0.4 0.6 0" scale="0.09 0.09 0.09">
+      <a-entity gltf-model="#lan" position="-.9 .7 -.5" scale="0.1 0.1 0.1" rotation="0 10 0">
       </a-entity>
-      <a-entity gltf-model="#surface" position="0 0 0" scale="3 3 3">
+      <a-entity gltf-model="#curiosity" position="-.9 0 .5" scale=".15 .15 .15" rotation="0 90 0" rotation="0 0 0" animation-mixer="clip:Take 01">
       </a-entity>
-      <a-entity gltf-model="#earth" position="1 1 0" scale="0.03 0.03 0.03">
+      <a-entity gltf-model="#surface" position="0 0 0" scale="3 3 3" rotation="0 0 0">
       </a-entity>
-      <a-entity position="-0.1 -1.35 1.5">
+      <a-entity gltf-model="#earth" position="1 2 0" scale="0.03 0.03 0.03" animation-mixer="clip:Take 001">
+      </a-entity>
+      <a-entity gltf-model="#stars" position="0 0 0" scale=".1 .1 .1" animation-mixer>
+      </a-entity>
+      <a-entity position="-0.1 -1.25 1.5" rotation="0 0 0">
         <a-camera></a-camera>
       </a-entity>
 
